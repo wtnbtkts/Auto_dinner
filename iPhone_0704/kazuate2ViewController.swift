@@ -8,14 +8,14 @@
 
 import UIKit
 
-class kazuate3ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
+class kazuate2ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     
     @IBOutlet var pickerView: UIPickerView!
     @IBOutlet var label: UILabel!
     @IBOutlet var textView: UITextView!
     
     //時間計測用の変数.
-    var cnt : Float = 20
+    var cnt : Float = 15
     
     //時間表示用のラベル.
     var myLabel : UILabel!
@@ -34,7 +34,7 @@ class kazuate3ViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
     
     // 全て文字列の空の配列を宣言
     //    var numbers = [String]()
-    var answers = [Int](count: 3, repeatedValue: 0)
+    var answers = [Int](count: 2, repeatedValue: 0)
     var array = [String]()
     
     //正解数
@@ -43,11 +43,7 @@ class kazuate3ViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
     /// 画面遷移時に渡す為の値
     var _param:String = "segue OK"
     
-    
-    
-    
-    
-    
+ 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -117,7 +113,7 @@ class kazuate3ViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
     (実装必須)表示列
     */
     func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
-        return 3
+        return 2
     }
     
     /*
@@ -157,9 +153,29 @@ class kazuate3ViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
                     min = answers[i]
                 }
             }
-            
             textView.text = "一番小さい数字は\(min)だよ！\n" + textView.text
         } else if (count == 4) {
+            var sum = 0
+            
+            for i in 0 ..< pickerView.numberOfComponents {
+                sum += answers[i]
+            }
+            textView.text = "答えの数の合計は\(sum)だよ！\n" + textView.text
+        } else if (count == 6) {
+            var max = answers[0]
+            
+            for i in 0 ..< pickerView.numberOfComponents {
+                if (max < answers[i]){
+                    max = answers[i]
+                }
+            }
+            textView.text = "一番大きい数字は\(max)だよ！\n" + textView.text
+        }
+        
+        
+        
+        /*
+        if (count == 5) {
             var sum = 0
             
             for i in 0 ..< pickerView.numberOfComponents {
@@ -169,7 +185,17 @@ class kazuate3ViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
             // sum = answers.reduce(0, combine: +)
             
             textView.text = "答えの数の合計は\(sum)だよ！\n" + textView.text
-        }  else if (count == 6) {
+        } else if (count == 10) {
+            var min = answers[0]
+            
+            for i in 0 ..< pickerView.numberOfComponents {
+                if (min > answers[i]){
+                    min = answers[i]
+                }
+            }
+            
+            textView.text = "一番小さい数字は\(min)だよ！\n" + textView.text
+        } else if (count == 15) {
             var max = answers[0]
             
             for i in 0 ..< pickerView.numberOfComponents {
@@ -179,12 +205,8 @@ class kazuate3ViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
             }
             
             textView.text = "一番大きい数字は\(max)だよ！\n" + textView.text
-        } else if (count == 8) {
-            var four = answers[0]
-            
-            textView.text = "3桁目の数字は\(answers[2])だよ！\n" + textView.text
         }
-        
+        */
         
         var hit = 0
         //        println("\(answers)")
@@ -203,11 +225,11 @@ class kazuate3ViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
         
         print("\(hit)hit")
         
-        if (hit == 3) {
+        if (hit == 2) {
             label.text = "Congratulations！"
             label.textColor = UIColor.redColor()
             button.enabled = false
-            score = score + 200
+            score = score + 100
             //correctAnswer++
             print("vvvvvvvvvvscore\(score)")
         } else {
@@ -221,8 +243,6 @@ class kazuate3ViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
         var appDelegate:AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate //AppDelegateのインスタンスを取得
         appDelegate.correctAnswer = "100" //appDelegateの変数を操作
         */
-        
-        
     }
     /**
     画面遷移ボタン
@@ -243,195 +263,15 @@ class kazuate3ViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
         }
     }
     
-    /*
-    override func viewWillDisappear(animated: Bool) {
-        super.viewDidDisappear(animated)
-        var appDelegate: AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
-        appDelegate.ViewVal = score //textField.textの値を引き渡す
-    }*/
-    
     override func viewWillAppear(animated: Bool) {
         super.viewDidDisappear(animated)
         let appDelegate: AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
         score = appDelegate.ViewVal //score4にscore3の値を引き渡す
     }
     
-    
     override func viewWillDisappear(animated: Bool) {
         super.viewDidDisappear(animated)
         let appDelegate: AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
-        appDelegate.ViewVal = score //score4の値を引き渡す
-    }
-    
-    
+        appDelegate.ViewVal = score //textField.textの値を引き渡す
+    }  
 }
-
-/*
-import UIKit
-
-class kazuateViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
-    
-    @IBOutlet var pickerView: UIPickerView!
-    @IBOutlet var label: UILabel!
-    @IBOutlet var textView: UITextView!
-    
-    //当たった回数
-    var hit:Int = 0
-    //挑戦した回数
-    var count:Int = 0
-    //picker viewで選択したインデックス番号
-    
-    // 全て文字列の空の配列を宣言
-    var numbers: [String] = []
-    var answers = [Int](count: 100, repeatedValue: 0)///////////////////Int型の配列をとりあえず１００個作る、中身は全部０
-    var array = [String]()
-    
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        
-        // Delegateを設定する.
-        pickerView.delegate = self
-        
-        // DataSourceを設定する.
-        pickerView.dataSource = self
-        
-        textView.editable = false
-        textView.text = ""
-        
-        //        var answers:[String] = []///////////////////////////上で宣言してるのでこれは必要ないですね
-        var n = answers.count
-        println(n)
-        //answers = [[NSMutableArray alloc] init]
-        
-        numbers = ["0","1","2","3","4","5","6","7","8","9"]
-        
-        for var i = 0 ; i < pickerView.numberOfComponents ; i++ {
-            // do something
-            //NSLog("for statement i:\(i)")
-            
-            var random = arc4random_uniform(10);
-            answers[i] = Int(random)
-        }
-        
-        for string in answers{
-            println("\(string)")
-        }
-        
-        
-    }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-    
-    
-    /*
-    pickerに表示する列数を返すデータソースメソッド.
-    (実装必須)表示列
-    */
-    func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
-        return 4
-    }
-    
-    /*
-    pickerに表示する行数を返すデータソースメソッド.
-    (実装必須)表示個数
-    */
-    func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return 10
-    }
-    
-    /*
-    pickerに表示する値を返すデリゲートメソッド.表示内容
-    */
-    func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String {
-        return numbers[row] as String
-    }
-    
-    //選択時
-    func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        println("列: \(row)")
-        println("値: \(numbers[row])")
-    }
-    
-    
-    @IBAction func enter(button:UIButton){
-        //var tappedButton:UIButton = sender as UIButton
-        //tappedButton.setTitle("tapped", forState:UIControlState.Normal)
-        
-        count++;
-        if (count == 5) {
-            var sum = 0
-            
-            for var i = 0 ; i < pickerView.numberOfComponents ; i++ {
-                sum = sum + Int(answers[i])//.toInt()!)
-            }
-            
-            var lastString:String! = textView.text;
-            var string:String! = NSString(format:"答えの数の合計は%dだよ！\n", sum) as String
-            //文字列結合
-            textView.text = string + lastString
-            
-            //        NSString *lastString = textView.text;
-            //        NSString *string = [NSString stringWithFormat:
-            //                            @"１つ目の答えは%@だよ！\n", answers[0]];
-            //        textView.text = [string stringByAppendingString:
-            //                         lastString];
-        } else if (count == 10) {
-            var num = answers[0]//.toInt()!;
-            
-            for var i = 0; i < pickerView.numberOfComponents ; i++ {
-                if (num > answers[i]){//.toInt()!) {
-                    num = answers[i]//.toInt()!;
-                }
-            }
-            
-            var lastString:String! = textView.text
-            var string:String! = NSString(format:"一番小さい数字は%dだよ！\n", num) as String
-            //文字列結合
-            textView.text = string + lastString
-            
-            //        NSString *lastString = textView.text;
-            //        NSString *string = [NSString stringWithFormat:
-            //                            @"３つ目の答えは%@だよ！\n", answers[2]];
-            //        textView.text = [string stringByAppendingString:
-            //                         lastString];
-        }
-        
-        hit = 0
-        
-        for var i = 0 ; i < pickerView.numberOfComponents; i++ {
-            // do something
-            //NSLog("for statement i:\(i)")
-            
-            //選択されている値のインデックス番号を取得する
-            var answer = numbers[pickerView.selectedRowInComponent(i)]
-            var answer2 = String(answers[i])
-            
-            
-            
-            if (answer == answer2) {
-                hit = hit + 1
-            }
-        }
-        
-        
-        if (hit == 4) {
-            label.text = "クリア！"
-            //textView.text = [NSString stringWithFormat:@"クリアまでの回数：%d", count];
-            button.enabled = false
-        } else {
-            label.text = NSString(format:"%d個正解！", hit) as String
-            var lastString:String! = textView.text
-            var string:String! = NSString(format:"%d個正解！\n", hit) as String
-            textView.text =  string + lastString
-        }
-        
-        
-    }
-}
-*/

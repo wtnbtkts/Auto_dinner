@@ -8,15 +8,20 @@
 
 
 import UIKit
+import AVFoundation
 
-class kazuateViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
+class kazuate4ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource ,AVAudioPlayerDelegate {
     
     @IBOutlet var pickerView: UIPickerView!
     @IBOutlet var label: UILabel!
     @IBOutlet var textView: UITextView!
     
+    var audioPlayer : AVAudioPlayer!
+    var soundCount:Int=0
+    var filenames:[String] = ["drum2"]
+    
     //時間計測用の変数.
-    var cnt : Float = 10
+    var cnt : Float = 25
     
     //時間表示用のラベル.
     var myLabel : UILabel!
@@ -26,6 +31,9 @@ class kazuateViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
     
     //挑戦した回数
     var count = 0
+    
+    //スコア
+    var score : Int!
     
     //picker viewで選択したインデックス番号
     var selectedIndex = 0
@@ -47,27 +55,27 @@ class kazuateViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
     @IBOutlet weak var _myLabel: UILabel!
     
     /// 遷移時の受け取り用の変数
-    var _second:String = ""
-    
+    //var _second:String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        print("score\(score)")
         // Do any additional setup after loading the view, typically from a nib.
         
         // ラベルに受け取った遷移用の変数を渡す
-        _myLabel.text = _second
+        //_myLabel.text = _second
         
         //ラベルを作る.
         myLabel = UILabel(frame: CGRectMake(0,0,150,50))
-        myLabel.backgroundColor = UIColor.orangeColor()
+        myLabel.backgroundColor = UIColor.blackColor()
         myLabel.layer.masksToBounds = true
         myLabel.layer.cornerRadius = 20.0
         myLabel.text = "Time:\(cnt)"
         myLabel.textColor = UIColor.whiteColor()
         myLabel.shadowColor = UIColor.grayColor()
         myLabel.textAlignment = NSTextAlignment.Center
-        myLabel.layer.position = CGPoint(x: 280,y: 130)
-        self.view.backgroundColor = UIColor.cyanColor()
+        myLabel.layer.position = CGPoint(x: 290,y: 70)
+        //self.view.backgroundColor = UIColor.cyanColor()
         self.view.addSubview(myLabel)
         
         //タイマーを作る.
@@ -87,13 +95,13 @@ class kazuateViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
         
         //        numbers = ["0","1","2","3","4","5","6","7","8","9"]
         
-        println("\(pickerView.numberOfComponents)")
+        print("\(pickerView.numberOfComponents)")
         for i in 0 ..< pickerView.numberOfComponents {
             let random = arc4random_uniform(10)
             answers[i] = Int(random)
         }
         
-        println("answer is \(answers)")
+        print("answer is \(answers)")
     }
     
     //NSTimerIntervalで指定された秒数毎に呼び出されるメソッド.
@@ -102,19 +110,19 @@ class kazuateViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
         cnt -= 0.1
         if cnt < 0{
             cnt = 0
-            //performSegueToResult()
+            timer.invalidate()
+            performSegueToResult()
         }
         
         //桁数を指定して文字列を作る.
         let str = "Time:".stringByAppendingFormat("%.1f",cnt)
         myLabel.text = str
-        
     }
-    /*
+    
     func performSegueToResult() {
     performSegueWithIdentifier("toResultView", sender: nil)
     }
-    */
+    
     
     /*
     pickerに表示する列数を返すデータソースメソッド.
@@ -148,22 +156,12 @@ class kazuateViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
     
     
     @IBAction func enter(button:UIButton){
-        println("************")
+        print("************")
         count++
         
-        println("count : \(count)")
+        print("count : \(count)")
         
-        if (count == 5) {
-            var sum = 0
-            
-            for i in 0 ..< pickerView.numberOfComponents {
-                sum += answers[i]
-            }
-            
-            // sum = answers.reduce(0, combine: +)
-            
-            textView.text = "答えの数の合計は\(sum)だよ！\n" + textView.text
-        } else if (count == 10) {
+        if (count == 2) {
             var min = answers[0]
             
             for i in 0 ..< pickerView.numberOfComponents {
@@ -173,7 +171,33 @@ class kazuateViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
             }
             
             textView.text = "一番小さい数字は\(min)だよ！\n" + textView.text
+        } else if (count == 4) {
+            var sum = 0
+            
+            for i in 0 ..< pickerView.numberOfComponents {
+                sum += answers[i]
+            }
+            
+            // sum = answers.reduce(0, combine: +)
+            
+            textView.text = "答えの数の合計は\(sum)だよ！\n" + textView.text
+        }  else if (count == 5) {
+            var max = answers[0]
+            
+            for i in 0 ..< pickerView.numberOfComponents {
+                if (max < answers[i]){
+                    max = answers[i]
+                }
+            }
+            
+            textView.text = "一番大きい数字は\(max)だよ！\n" + textView.text
+        } else if (count == 6) {
+            var four = answers[0]
+            
+            textView.text = "4桁目の数字は\(answers[3])だよ！\n" + textView.text
         }
+        
+        
         
         var hit = 0
         //        println("\(answers)")
@@ -183,29 +207,63 @@ class kazuateViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
             let selectedNumber = pickerView.selectedRowInComponent(i)
             let answer = answers[i]
             
-            println("\(selectedNumber) -> \(answer)")
+            print("\(selectedNumber) -> \(answer)")
             
             if (answer == selectedNumber) {
                 hit++
             }
         }
         
-        println("\(hit)hit")
+        print("\(hit)hit")
         
         if (hit == 4) {
-            label.text = "クリア！"
+            label.text = "Congratulations！"
+            label.textColor = UIColor.redColor()
             button.enabled = false
+            score = score + 300
             //correctAnswer++
         } else {
             label.text = "\(hit)個正解！"
             textView.text = "\(hit)個正解！\n" + textView.text
+            score = score + 0
         }
         /*
         var appDelegate:AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate //AppDelegateのインスタンスを取得
         appDelegate.correctAnswer = "correctAnswer+200" //appDelegateの変数を操作
         */
-        
     }
+    
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewDidDisappear(animated)
+        let appDelegate: AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        score = appDelegate.ViewVal //score4にscore3の値を引き渡す
+    }
+    
+    
+    override func viewWillDisappear(animated: Bool) {
+        super.viewDidDisappear(animated)
+        let appDelegate: AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        appDelegate.ViewVal = score //score4の値を引き渡す
+    }
+    
+    func playerWithFilename(filenames:String) -> AVAudioPlayer {
+        let soundFilePath = NSBundle.mainBundle().pathForResource(filenames, ofType: "mp3")
+        let fileURL : NSURL = NSURL(fileURLWithPath:soundFilePath!)
+        
+        
+        //AVAudioPlayerのインスタンス化.!
+        return try! AVAudioPlayer(contentsOfURL: fileURL)
+    }
+    
+    @IBAction func playButton(){
+        //audioPlayer = playerWithFilename(filenames)
+        audioPlayer = playerWithFilename(filenames[soundCount])
+        audioPlayer.numberOfLoops = soundCount
+        audioPlayer.play()
+    }
+    
+    
 }
 
 /*

@@ -14,22 +14,53 @@
 		A201F3B71B308C0300E60611 /* iPhone_0704Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A201F3B61B308C0300E60611 /* iPhone_0704Tests.swift */; };
 		A201F3C11B308F4D00E60611 /* nabe.png in Resources */ = {isa = PBXBuildFile; fileRef = A201F3C01B308F4D00E60611 /* nabe.png */; };
 		A201F3C31B30A04900E60611 /* cake.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A201F3C21B30A04900E60611 /* cake.jpg */; };
-		A219B1B31B3A8957001E1783 /* kazuateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A219B1B21B3A8957001E1783 /* kazuateViewController.swift */; };
-		A219B1B51B3A8AD7001E1783 /* santaku.swift in Sources */ = {isa = PBXBuildFile; fileRef = A219B1B41B3A8AD7001E1783 /* santaku.swift */; };
-		A256E63E1B3469BB00A681D1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A256E63D1B3469BB00A681D1 /* Main.storyboard */; };
+		A219B1B31B3A8957001E1783 /* kazuate4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A219B1B21B3A8957001E1783 /* kazuate4ViewController.swift */; };
+		A21C61D21C021EEF0032F684 /* food_curryruce.png in Resources */ = {isa = PBXBuildFile; fileRef = A21C61D11C021EEF0032F684 /* food_curryruce.png */; };
+		A21C61D91C0221D30032F684 /* food_gyudon.png in Resources */ = {isa = PBXBuildFile; fileRef = A21C61D31C0221D30032F684 /* food_gyudon.png */; };
+		A21C61DA1C0221D30032F684 /* food_katsudon.png in Resources */ = {isa = PBXBuildFile; fileRef = A21C61D41C0221D30032F684 /* food_katsudon.png */; };
+		A21C61DB1C0221D30032F684 /* ramen_tonkotsu.png in Resources */ = {isa = PBXBuildFile; fileRef = A21C61D51C0221D30032F684 /* ramen_tonkotsu.png */; };
+		A21C61DC1C0221D30032F684 /* soba_morisoba.png in Resources */ = {isa = PBXBuildFile; fileRef = A21C61D61C0221D30032F684 /* soba_morisoba.png */; };
+		A21C61DD1C0221D30032F684 /* syokudou.png in Resources */ = {isa = PBXBuildFile; fileRef = A21C61D71C0221D30032F684 /* syokudou.png */; };
+		A21C61DE1C0221D30032F684 /* teisyoku_hiyayakko.png in Resources */ = {isa = PBXBuildFile; fileRef = A21C61D81C0221D30032F684 /* teisyoku_hiyayakko.png */; };
+		A21C61E01C0228AA0032F684 /* omatsuri_yakisoba.png in Resources */ = {isa = PBXBuildFile; fileRef = A21C61DF1C0228AA0032F684 /* omatsuri_yakisoba.png */; };
+		A21C61E21C0228C20032F684 /* obentou_conbini.png in Resources */ = {isa = PBXBuildFile; fileRef = A21C61E11C0228C20032F684 /* obentou_conbini.png */; };
+		A2415C051B3FAC1E00980F93 /* kazuate2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2415C041B3FAC1E00980F93 /* kazuate2ViewController.swift */; };
+		A2415C081B4113BC00980F93 /* girlsleep.png in Resources */ = {isa = PBXBuildFile; fileRef = A2415C061B4113BC00980F93 /* girlsleep.png */; };
+		A2415C091B4113BC00980F93 /* mansleep.png in Resources */ = {isa = PBXBuildFile; fileRef = A2415C071B4113BC00980F93 /* mansleep.png */; };
+		A2415C0D1B419D0400980F93 /* flash2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2415C0C1B419D0400980F93 /* flash2ViewController.swift */; };
+		A2415C101B419D5D00980F93 /* flash3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2415C0E1B419D5D00980F93 /* flash3ViewController.swift */; };
+		A2415C111B419D5D00980F93 /* flash4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2415C0F1B419D5D00980F93 /* flash4ViewController.swift */; };
+		A2415C131B419E6A00980F93 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2415C121B419E6A00980F93 /* Main.storyboard */; };
+		A2415C151B41A7B800980F93 /* flashResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2415C141B41A7B800980F93 /* flashResultViewController.swift */; };
+		A246BAB71B43C33F006ED31F /* sky.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A246BAB61B43C33F006ED31F /* sky.jpg */; };
+		A246BABA1B43C3E1006ED31F /* skya.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A246BAB81B43C3E1006ED31F /* skya.jpg */; };
+		A246BABB1B43C3E1006ED31F /* skyb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A246BAB91B43C3E1006ED31F /* skyb.jpg */; };
 		A256E6461B34733100A681D1 /* flashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A256E6451B34733100A681D1 /* flashViewController.swift */; };
 		A256E64A1B35413200A681D1 /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = A256E6491B35413200A681D1 /* ViewController2.swift */; };
+		A28836691C01A94200AF87B8 /* flash.png in Resources */ = {isa = PBXBuildFile; fileRef = A28836681C01A94200AF87B8 /* flash.png */; };
+		A288366B1C01AD1800AF87B8 /* rightarrow.png in Resources */ = {isa = PBXBuildFile; fileRef = A288366A1C01AD1800AF87B8 /* rightarrow.png */; };
+		A288366D1C01ADAB00AF87B8 /* rightarrow2.png in Resources */ = {isa = PBXBuildFile; fileRef = A288366C1C01ADAB00AF87B8 /* rightarrow2.png */; };
+		A288366F1C01AE1900AF87B8 /* rightarrow3.png in Resources */ = {isa = PBXBuildFile; fileRef = A288366E1C01AE1900AF87B8 /* rightarrow3.png */; };
+		A28836711C01AE6700AF87B8 /* roghtarrow4.png in Resources */ = {isa = PBXBuildFile; fileRef = A28836701C01AE6700AF87B8 /* roghtarrow4.png */; };
+		A28836731C01AF2900AF87B8 /* dentaku.png in Resources */ = {isa = PBXBuildFile; fileRef = A28836721C01AF2900AF87B8 /* dentaku.png */; };
+		A28836751C01B0FE00AF87B8 /* relax_boy.png in Resources */ = {isa = PBXBuildFile; fileRef = A28836741C01B0FE00AF87B8 /* relax_boy.png */; };
+		A28836771C01B10800AF87B8 /* relax_girl.png in Resources */ = {isa = PBXBuildFile; fileRef = A28836761C01B10800AF87B8 /* relax_girl.png */; };
+		A294713B1B4544B900091DF2 /* answer.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A29471361B4544B900091DF2 /* answer.mp3 */; };
+		A29471411B45459300091DF2 /* problem.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A29471401B45459300091DF2 /* problem.mp3 */; };
+		A29471431B45499900091DF2 /* drum-roll1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A29471421B45499900091DF2 /* drum-roll1.mp3 */; };
+		A29471451B454AAA00091DF2 /* trumpet1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A29471441B454AAA00091DF2 /* trumpet1.mp3 */; };
+		A29471471B454CE500091DF2 /* miss2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A29471461B454CE500091DF2 /* miss2.mp3 */; };
+		A29471491B454EC500091DF2 /* drum2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A29471481B454EC500091DF2 /* drum2.mp3 */; };
+		A294714B1B45775F00091DF2 /* soba.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A294714A1B45775E00091DF2 /* soba.jpg */; };
 		A2A7125A1B3D1846009EA12D /* riceoutResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2A712591B3D1846009EA12D /* riceoutResultViewController.swift */; };
 		A2A7125C1B3D1B2C009EA12D /* riceinResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2A7125B1B3D1B2C009EA12D /* riceinResultViewController.swift */; };
-		A2C1AD571B3301B900850821 /* Result3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C1AD561B3301B900850821 /* Result3ViewController.swift */; };
+		A2B9AE531BF1ABEB00EA142F /* obasan02_angry.png in Resources */ = {isa = PBXBuildFile; fileRef = A2B9AE521BF1ABEB00EA142F /* obasan02_angry.png */; };
 		A2C1AD591B33024C00850821 /* soroban.png in Resources */ = {isa = PBXBuildFile; fileRef = A2C1AD581B33024C00850821 /* soroban.png */; };
 		A2C1AD5D1B3308CB00850821 /* fuji245.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A2C1AD5A1B3308CB00850821 /* fuji245.jpg */; };
 		A2C1AD5E1B3308CB00850821 /* fuji464.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A2C1AD5B1B3308CB00850821 /* fuji464.jpg */; };
 		A2C1AD5F1B3308CB00850821 /* fuji469.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A2C1AD5C1B3308CB00850821 /* fuji469.jpg */; };
 		A2D92DA61B3C787900946685 /* kazuate3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D92DA51B3C787900946685 /* kazuate3ViewController.swift */; };
 		A2D92DA81B3C7EB600946685 /* kazuateResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D92DA71B3C7EB600946685 /* kazuateResultViewController.swift */; };
-		A2DC39771B3BF80900DD272A /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2DC39751B3BF80900DD272A /* QuizViewController.swift */; };
-		A2DC39781B3BF80900DD272A /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2DC39761B3BF80900DD272A /* ResultViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,22 +85,53 @@
 		A201F3B61B308C0300E60611 /* iPhone_0704Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iPhone_0704Tests.swift; sourceTree = "<group>"; };
 		A201F3C01B308F4D00E60611 /* nabe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nabe.png; sourceTree = "<group>"; };
 		A201F3C21B30A04900E60611 /* cake.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cake.jpg; sourceTree = "<group>"; };
-		A219B1B21B3A8957001E1783 /* kazuateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = kazuateViewController.swift; sourceTree = "<group>"; };
-		A219B1B41B3A8AD7001E1783 /* santaku.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = santaku.swift; sourceTree = "<group>"; };
-		A256E63D1B3469BB00A681D1 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		A219B1B21B3A8957001E1783 /* kazuate4ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = kazuate4ViewController.swift; sourceTree = "<group>"; };
+		A21C61D11C021EEF0032F684 /* food_curryruce.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = food_curryruce.png; sourceTree = "<group>"; };
+		A21C61D31C0221D30032F684 /* food_gyudon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = food_gyudon.png; sourceTree = "<group>"; };
+		A21C61D41C0221D30032F684 /* food_katsudon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = food_katsudon.png; sourceTree = "<group>"; };
+		A21C61D51C0221D30032F684 /* ramen_tonkotsu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ramen_tonkotsu.png; sourceTree = "<group>"; };
+		A21C61D61C0221D30032F684 /* soba_morisoba.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = soba_morisoba.png; sourceTree = "<group>"; };
+		A21C61D71C0221D30032F684 /* syokudou.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = syokudou.png; sourceTree = "<group>"; };
+		A21C61D81C0221D30032F684 /* teisyoku_hiyayakko.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = teisyoku_hiyayakko.png; sourceTree = "<group>"; };
+		A21C61DF1C0228AA0032F684 /* omatsuri_yakisoba.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = omatsuri_yakisoba.png; sourceTree = "<group>"; };
+		A21C61E11C0228C20032F684 /* obentou_conbini.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = obentou_conbini.png; sourceTree = "<group>"; };
+		A2415C041B3FAC1E00980F93 /* kazuate2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = kazuate2ViewController.swift; sourceTree = "<group>"; };
+		A2415C061B4113BC00980F93 /* girlsleep.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = girlsleep.png; sourceTree = "<group>"; };
+		A2415C071B4113BC00980F93 /* mansleep.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mansleep.png; sourceTree = "<group>"; };
+		A2415C0C1B419D0400980F93 /* flash2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = flash2ViewController.swift; sourceTree = "<group>"; };
+		A2415C0E1B419D5D00980F93 /* flash3ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = flash3ViewController.swift; sourceTree = "<group>"; };
+		A2415C0F1B419D5D00980F93 /* flash4ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = flash4ViewController.swift; sourceTree = "<group>"; };
+		A2415C121B419E6A00980F93 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		A2415C141B41A7B800980F93 /* flashResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = flashResultViewController.swift; sourceTree = "<group>"; };
+		A246BAB61B43C33F006ED31F /* sky.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sky.jpg; sourceTree = "<group>"; };
+		A246BAB81B43C3E1006ED31F /* skya.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = skya.jpg; sourceTree = "<group>"; };
+		A246BAB91B43C3E1006ED31F /* skyb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = skyb.jpg; sourceTree = "<group>"; };
 		A256E6451B34733100A681D1 /* flashViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = flashViewController.swift; sourceTree = "<group>"; };
 		A256E6491B35413200A681D1 /* ViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
+		A28836681C01A94200AF87B8 /* flash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flash.png; sourceTree = "<group>"; };
+		A288366A1C01AD1800AF87B8 /* rightarrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rightarrow.png; sourceTree = "<group>"; };
+		A288366C1C01ADAB00AF87B8 /* rightarrow2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rightarrow2.png; sourceTree = "<group>"; };
+		A288366E1C01AE1900AF87B8 /* rightarrow3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rightarrow3.png; sourceTree = "<group>"; };
+		A28836701C01AE6700AF87B8 /* roghtarrow4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = roghtarrow4.png; sourceTree = "<group>"; };
+		A28836721C01AF2900AF87B8 /* dentaku.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dentaku.png; sourceTree = "<group>"; };
+		A28836741C01B0FE00AF87B8 /* relax_boy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = relax_boy.png; sourceTree = "<group>"; };
+		A28836761C01B10800AF87B8 /* relax_girl.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = relax_girl.png; sourceTree = "<group>"; };
+		A29471361B4544B900091DF2 /* answer.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = answer.mp3; sourceTree = "<group>"; };
+		A29471401B45459300091DF2 /* problem.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = problem.mp3; sourceTree = "<group>"; };
+		A29471421B45499900091DF2 /* drum-roll1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "drum-roll1.mp3"; sourceTree = "<group>"; };
+		A29471441B454AAA00091DF2 /* trumpet1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = trumpet1.mp3; sourceTree = "<group>"; };
+		A29471461B454CE500091DF2 /* miss2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = miss2.mp3; sourceTree = "<group>"; };
+		A29471481B454EC500091DF2 /* drum2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = drum2.mp3; sourceTree = "<group>"; };
+		A294714A1B45775E00091DF2 /* soba.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = soba.jpg; sourceTree = "<group>"; };
 		A2A712591B3D1846009EA12D /* riceoutResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = riceoutResultViewController.swift; sourceTree = "<group>"; };
 		A2A7125B1B3D1B2C009EA12D /* riceinResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = riceinResultViewController.swift; sourceTree = "<group>"; };
-		A2C1AD561B3301B900850821 /* Result3ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result3ViewController.swift; sourceTree = "<group>"; };
+		A2B9AE521BF1ABEB00EA142F /* obasan02_angry.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = obasan02_angry.png; sourceTree = "<group>"; };
 		A2C1AD581B33024C00850821 /* soroban.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = soroban.png; sourceTree = "<group>"; };
 		A2C1AD5A1B3308CB00850821 /* fuji245.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = fuji245.jpg; sourceTree = "<group>"; };
 		A2C1AD5B1B3308CB00850821 /* fuji464.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = fuji464.jpg; sourceTree = "<group>"; };
 		A2C1AD5C1B3308CB00850821 /* fuji469.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = fuji469.jpg; sourceTree = "<group>"; };
 		A2D92DA51B3C787900946685 /* kazuate3ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = kazuate3ViewController.swift; sourceTree = "<group>"; };
 		A2D92DA71B3C7EB600946685 /* kazuateResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = kazuateResultViewController.swift; sourceTree = "<group>"; };
-		A2DC39751B3BF80900DD272A /* QuizViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
-		A2DC39761B3BF80900DD272A /* ResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,28 +173,59 @@
 		A201F39D1B308C0200E60611 /* iPhone_0704 */ = {
 			isa = PBXGroup;
 			children = (
+				A21C61E11C0228C20032F684 /* obentou_conbini.png */,
+				A21C61DF1C0228AA0032F684 /* omatsuri_yakisoba.png */,
+				A21C61D31C0221D30032F684 /* food_gyudon.png */,
+				A21C61D41C0221D30032F684 /* food_katsudon.png */,
+				A21C61D51C0221D30032F684 /* ramen_tonkotsu.png */,
+				A21C61D61C0221D30032F684 /* soba_morisoba.png */,
+				A21C61D71C0221D30032F684 /* syokudou.png */,
+				A21C61D81C0221D30032F684 /* teisyoku_hiyayakko.png */,
+				A21C61D11C021EEF0032F684 /* food_curryruce.png */,
+				A28836761C01B10800AF87B8 /* relax_girl.png */,
+				A28836741C01B0FE00AF87B8 /* relax_boy.png */,
+				A28836721C01AF2900AF87B8 /* dentaku.png */,
+				A28836701C01AE6700AF87B8 /* roghtarrow4.png */,
+				A288366E1C01AE1900AF87B8 /* rightarrow3.png */,
+				A288366C1C01ADAB00AF87B8 /* rightarrow2.png */,
+				A288366A1C01AD1800AF87B8 /* rightarrow.png */,
+				A28836681C01A94200AF87B8 /* flash.png */,
+				A2B9AE521BF1ABEB00EA142F /* obasan02_angry.png */,
 				A201F3A01B308C0200E60611 /* AppDelegate.swift */,
+				A201F3A21B308C0200E60611 /* ViewController.swift */,
+				A256E6451B34733100A681D1 /* flashViewController.swift */,
+				A2415C0C1B419D0400980F93 /* flash2ViewController.swift */,
+				A2415C0E1B419D5D00980F93 /* flash3ViewController.swift */,
+				A2415C0F1B419D5D00980F93 /* flash4ViewController.swift */,
+				A2415C141B41A7B800980F93 /* flashResultViewController.swift */,
+				A2415C041B3FAC1E00980F93 /* kazuate2ViewController.swift */,
 				A2D92DA51B3C787900946685 /* kazuate3ViewController.swift */,
-				A219B1B21B3A8957001E1783 /* kazuateViewController.swift */,
+				A219B1B21B3A8957001E1783 /* kazuate4ViewController.swift */,
 				A2D92DA71B3C7EB600946685 /* kazuateResultViewController.swift */,
-				A2DC39751B3BF80900DD272A /* QuizViewController.swift */,
-				A2DC39761B3BF80900DD272A /* ResultViewController.swift */,
 				A256E6491B35413200A681D1 /* ViewController2.swift */,
-				A256E63D1B3469BB00A681D1 /* Main.storyboard */,
 				A2A712591B3D1846009EA12D /* riceoutResultViewController.swift */,
 				A2A7125B1B3D1B2C009EA12D /* riceinResultViewController.swift */,
-				A201F3A21B308C0200E60611 /* ViewController.swift */,
-				A2C1AD561B3301B900850821 /* Result3ViewController.swift */,
-				A256E6451B34733100A681D1 /* flashViewController.swift */,
-				A219B1B41B3A8AD7001E1783 /* santaku.swift */,
+				A2415C121B419E6A00980F93 /* Main.storyboard */,
 				A201F3A71B308C0200E60611 /* Images.xcassets */,
 				A201F3A91B308C0200E60611 /* LaunchScreen.xib */,
+				A29471361B4544B900091DF2 /* answer.mp3 */,
 				A201F3C01B308F4D00E60611 /* nabe.png */,
 				A201F3C21B30A04900E60611 /* cake.jpg */,
 				A2C1AD581B33024C00850821 /* soroban.png */,
+				A29471401B45459300091DF2 /* problem.mp3 */,
+				A29471421B45499900091DF2 /* drum-roll1.mp3 */,
 				A2C1AD5A1B3308CB00850821 /* fuji245.jpg */,
 				A2C1AD5B1B3308CB00850821 /* fuji464.jpg */,
 				A2C1AD5C1B3308CB00850821 /* fuji469.jpg */,
+				A29471441B454AAA00091DF2 /* trumpet1.mp3 */,
+				A29471461B454CE500091DF2 /* miss2.mp3 */,
+				A29471481B454EC500091DF2 /* drum2.mp3 */,
+				A2415C061B4113BC00980F93 /* girlsleep.png */,
+				A294714A1B45775E00091DF2 /* soba.jpg */,
+				A2415C071B4113BC00980F93 /* mansleep.png */,
+				A246BAB61B43C33F006ED31F /* sky.jpg */,
+				A246BAB81B43C3E1006ED31F /* skya.jpg */,
+				A246BAB91B43C3E1006ED31F /* skyb.jpg */,
 				A201F39E1B308C0200E60611 /* Supporting Files */,
 			);
 			path = iPhone_0704;
@@ -207,11 +300,14 @@
 		A201F3931B308C0200E60611 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftMigration = 0710;
+				LastSwiftUpdateCheck = 0710;
 				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = "渡辺 貴俊";
 				TargetAttributes = {
 					A201F39A1B308C0200E60611 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = SLU67F47W8;
 					};
 					A201F3AF1B308C0300E60611 = {
 						CreatedOnToolsVersion = 6.3.1;
@@ -245,13 +341,43 @@
 			files = (
 				A2C1AD5D1B3308CB00850821 /* fuji245.jpg in Resources */,
 				A201F3C31B30A04900E60611 /* cake.jpg in Resources */,
+				A288366F1C01AE1900AF87B8 /* rightarrow3.png in Resources */,
 				A201F3C11B308F4D00E60611 /* nabe.png in Resources */,
+				A21C61E01C0228AA0032F684 /* omatsuri_yakisoba.png in Resources */,
+				A2415C081B4113BC00980F93 /* girlsleep.png in Resources */,
+				A246BABB1B43C3E1006ED31F /* skyb.jpg in Resources */,
+				A29471471B454CE500091DF2 /* miss2.mp3 in Resources */,
+				A28836751C01B0FE00AF87B8 /* relax_boy.png in Resources */,
 				A2C1AD5F1B3308CB00850821 /* fuji469.jpg in Resources */,
+				A2415C131B419E6A00980F93 /* Main.storyboard in Resources */,
+				A21C61DD1C0221D30032F684 /* syokudou.png in Resources */,
+				A29471431B45499900091DF2 /* drum-roll1.mp3 in Resources */,
+				A21C61D21C021EEF0032F684 /* food_curryruce.png in Resources */,
 				A201F3AB1B308C0200E60611 /* LaunchScreen.xib in Resources */,
+				A288366B1C01AD1800AF87B8 /* rightarrow.png in Resources */,
+				A21C61DB1C0221D30032F684 /* ramen_tonkotsu.png in Resources */,
+				A246BAB71B43C33F006ED31F /* sky.jpg in Resources */,
+				A28836771C01B10800AF87B8 /* relax_girl.png in Resources */,
+				A21C61DC1C0221D30032F684 /* soba_morisoba.png in Resources */,
+				A294714B1B45775F00091DF2 /* soba.jpg in Resources */,
+				A29471451B454AAA00091DF2 /* trumpet1.mp3 in Resources */,
+				A288366D1C01ADAB00AF87B8 /* rightarrow2.png in Resources */,
+				A2B9AE531BF1ABEB00EA142F /* obasan02_angry.png in Resources */,
+				A246BABA1B43C3E1006ED31F /* skya.jpg in Resources */,
 				A2C1AD591B33024C00850821 /* soroban.png in Resources */,
-				A256E63E1B3469BB00A681D1 /* Main.storyboard in Resources */,
+				A21C61DA1C0221D30032F684 /* food_katsudon.png in Resources */,
+				A28836711C01AE6700AF87B8 /* roghtarrow4.png in Resources */,
+				A294713B1B4544B900091DF2 /* answer.mp3 in Resources */,
+				A2415C091B4113BC00980F93 /* mansleep.png in Resources */,
+				A28836731C01AF2900AF87B8 /* dentaku.png in Resources */,
+				A29471491B454EC500091DF2 /* drum2.mp3 in Resources */,
 				A2C1AD5E1B3308CB00850821 /* fuji464.jpg in Resources */,
+				A28836691C01A94200AF87B8 /* flash.png in Resources */,
+				A21C61E21C0228C20032F684 /* obentou_conbini.png in Resources */,
 				A201F3A81B308C0200E60611 /* Images.xcassets in Resources */,
+				A21C61DE1C0221D30032F684 /* teisyoku_hiyayakko.png in Resources */,
+				A29471411B45459300091DF2 /* problem.mp3 in Resources */,
+				A21C61D91C0221D30032F684 /* food_gyudon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,19 +395,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A219B1B31B3A8957001E1783 /* kazuateViewController.swift in Sources */,
+				A219B1B31B3A8957001E1783 /* kazuate4ViewController.swift in Sources */,
 				A256E6461B34733100A681D1 /* flashViewController.swift in Sources */,
 				A2A7125A1B3D1846009EA12D /* riceoutResultViewController.swift in Sources */,
 				A2D92DA81B3C7EB600946685 /* kazuateResultViewController.swift in Sources */,
+				A2415C0D1B419D0400980F93 /* flash2ViewController.swift in Sources */,
+				A2415C101B419D5D00980F93 /* flash3ViewController.swift in Sources */,
+				A2415C151B41A7B800980F93 /* flashResultViewController.swift in Sources */,
 				A2D92DA61B3C787900946685 /* kazuate3ViewController.swift in Sources */,
 				A201F3A31B308C0200E60611 /* ViewController.swift in Sources */,
-				A2DC39771B3BF80900DD272A /* QuizViewController.swift in Sources */,
 				A201F3A11B308C0200E60611 /* AppDelegate.swift in Sources */,
-				A219B1B51B3A8AD7001E1783 /* santaku.swift in Sources */,
-				A2C1AD571B3301B900850821 /* Result3ViewController.swift in Sources */,
+				A2415C111B419D5D00980F93 /* flash4ViewController.swift in Sources */,
 				A2A7125C1B3D1B2C009EA12D /* riceinResultViewController.swift in Sources */,
 				A256E64A1B35413200A681D1 /* ViewController2.swift in Sources */,
-				A2DC39781B3BF80900DD272A /* ResultViewController.swift in Sources */,
+				A2415C051B3FAC1E00980F93 /* kazuate2ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -400,9 +527,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = iPhone_0704/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -410,9 +539,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = iPhone_0704/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
